@@ -37,10 +37,14 @@
 <body>
     <h1 class="title">TO 小鸟游六花</h1>
     <p class="subtitle">我那样死板的山，竟也会为你哗然</p>
-    <audio autoplay loop volume = 1>
+    <audio autoplay loop>
         <source src="video/Luv (sic) pt2.mp3" type="audio/mpeg">
         您的浏览器不支持音频播放。
     </audio>
+    <script>
+        const audio = document.querySelector('audio');
+        audio.volume = 1;  // 设置音量为 1，表示最大音量，范围是 0 到 1
+    </script>
 </body>
 </html>
 
